@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Conditional Statement</title>
+	<script type="text/javascript">
+			var firstValue = 24;
+			var secondValue = 30;
+			/* if(firstValue > secondValue)
+			{
+				alert('firstValue is greater than secondValue');
+			}
+			else if(secondValue > firstValue)
+			{
+				alert('secondValue is greater than firstValue');
+			} */
+
+/*
+//Null Operator check
+var myResult = "";
+myResult = (firstValue == 24 ) ? "equal" : "notequal";
+alert(myResult);
+*/
+//Switch Statement
+var switchName = "Vaibhav";
+switch(switchName)
+{
+	case "Pallabi":
+					document.write("Welcome back ! Pallabi");
+					break;
+	case "Vaibhav":
+					document.write("Welcome back ! Vaibhav");
+					break;
+	default: 
+					document.write("none of the above condition applied");
+					break;
+
+}
+
+var rightNow = new Date();
+var currentHour = rightNow.getHours();
+switch(true)
+{
+	case (currentHour < 12):
+				document.write("Good Morning");
+				break;
+	case (currentHour == 12 || currentHour > 12 && currentHour < 16):
+				document.write("\nGood Afternoon " + rightNow);
+				break;
+    case(currentHour > 16 && currentHour < 19):
+    			document.write("Good Evening");
+    			break;
+    case(currentHour > 19):
+    			document.write("Good Night");
+    			break;
+     default: 
+     		document.write("Above condition doesnt meet");
+     		break;
+
+}
+
+
+</script>
+</head>
+<body>
+	<center><h3>Conditional Statement</h3></center><hr>
+
+</body>
+</html>

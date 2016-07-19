@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Functions</title>
+	<script type="text/javascript">
+
+	var myValue ;
+	
+	/*function myNewFunction(){
+		alert('Howdy!');
+	}
+    myNewFunction();
+    
+    function myNewFunction(value){
+    	alert("Howdy ! " + value);
+    	return;
+    }*/
+
+    /*function add(firstNumber, secondNumber){
+    	return firstNumber + secondNumber;
+    }
+
+    var result = add(10, 20);
+    alert(result);*/
+
+    function add () {
+    	var tempValue = 0;
+    	for (var i = 0; i < arguments.length; i++) {
+    		tempValue += arguments[i];
+    	};
+    	return tempValue;
+    	// body...
+    }
+
+var myValue = add(1,2,3);
+alert(myValue);
+
+	</script>
+</head>
+<body>
+	<center><h3>Functions</h3></center><hr>
+	
+</body>
+</html>

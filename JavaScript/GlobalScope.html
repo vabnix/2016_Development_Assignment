@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Local Scope Vs. Global Scope Function</title>
+	<script type="text/javascript">
+	var myScope = "Global";
+	(function(){
+		var myScope = "local";
+		alert('Inside the function , the scope is '+ myScope);
+	})();
+
+	alert('Outside the function , the scope is '+ myScope);
+
+	alert('window.myScope = '+ window.myScope);
+
+	</script>
+</head>
+
+<body bgcolor="white">
+	<center><h3>Local Scope Vs. Global Scope Function</h3></center><hr>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add Functions</title>
+	<script type="text/javascript">
+	/*function add()
+	{
+		var myTemp = 0;
+		for (var i = 0; i < arguments.length; i++) {
+		 myTemp +=	arguments[i];
+		};
+		return myTemp;
+	}
+
+	var result = add(1,2,3);
+	alert(result);*/
+
+var myResult = (function(){
+	return arguments[0] + arguments[1];
+})(1,2);
+alert(myResult);
+
+//Another way functions can be directly used to show alert
+alert((function(){
+	return arguments[0] + arguments[1];
+})(1,2));
+
+	</script>
+</head>
+
+<body>
+	<center><h3>Checking Add Method</h3></center><hr>
+</body>
+</html>
